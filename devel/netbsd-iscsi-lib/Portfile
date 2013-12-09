@@ -24,7 +24,8 @@ build.dir           ${worksrcpath}/src/${name_piece}
 checksums           sha1    223ee3f30e9b1d7b669796c5b9eb1fcb92907cc2 \
                     rmd160  3409e8b64db66ebeeff5ff48bd5ba5e7a192c646
 
-patchfiles          patch-src-lib-util.c.diff
+patchfiles          patch-src-lib-util.c.diff \
+                    patch-src-lib-disk.c.diff
 
 post-destroot {
     xinstall -d ${destroot}${prefix}/share/doc/${name}
